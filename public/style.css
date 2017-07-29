@@ -1,0 +1,76 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  margin: 0;
+  bottom: 0;
+}
+.tabs {
+  text-align: center;
+  padding-top: 40px;
+}
+.menu_block {
+  background-color: #909090;
+  padding: 15px 20px;
+  margin: 0px 10px;
+  display: inline-block;
+  transition: 0.6s;
+}
+.menu_block:hover {
+  background-color: #fff;
+  transform: scale(1.15, 1.15);
+  transition: 0.6s;
+}
+.page_tab {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #484848;
+}
+
+.img {
+  width: 300px;
+  padding-top: 10px;
+}
+.img_block {
+  text-align: center;
+  transition: 0.6s;
+}
+.img_block:hover {
+  transform: scale(1.15, 1.15);
+  transition: 0.6s;
+}
+.info_block {
+  text-align: center;
+}
+.title {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 35px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #484848;
+}
+.ingredients {
+  padding-top: 20px;
+  color: #fff;
+  text-shadow: 1px 2px 3px #484848;
+  font-size: 15px;
+}
+.price {
+  color: #ff0000;
+  font-size: 19px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #fff;
+}
+.contacts {
+  float: right;
+  padding: 40px 10px;
+  color: #fff;
+  text-shadow: 1px 2px 3px #484848;
+}
+div.page_tab .page_tab {
+  background-color: #000;
+}

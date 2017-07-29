@@ -1,0 +1,18 @@
+{
+  "name": "Online-Market",
+  "version": "1.0.0",
+  "description": "Online Market",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Kirill Krasnozhenov",
+  "license": "MIT",
+  "dependencies": {
+    "good": "^7.1.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.1",
+    "hapi": "^16.1.0",
+    "inert": "^4.2.1"
+  }
+}

@@ -1,0 +1,28 @@
+<div ng-repeat="item in items">
+  <div class="title">
+    {{item.name}}
+  </div>
+  <div class="img_block">
+    <img class="img" ng-src="{{item.url}}">
+  </div>
+  <div class="info_block">
+    <div class="ingredients">
+      <b>ingredients:</b> {{item.ingredients}}
+    </div>
+    <div class="price">
+      Price: {{item.price}}
+    </div>
+    <button type="button" class="btn btn-success">add to cart</button>
+  </div>
+</div>
+<div class="contacts">
+  <div>
+    Kirill Krasnozhenov
+  </div>
+  <div>
+    tel: +38 050 477 86 06
+  </div>
+  <div>
+    Skype: krasnuyy
+  </div>
+</div>
