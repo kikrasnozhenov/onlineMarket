@@ -9,8 +9,6 @@ angular.module('MarketApp', ['ngRoute'])
     })
     .when("/cart", {
       templateUrl: "/cart.html",
-      controller: "cartCtrl",
-      controllerAs: "vm"
     })
     .when("/history", {
       templateUrl: "/history.html"
