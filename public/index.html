@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8" />
   <title>Test Task Kirill Krasnozhenov</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -12,24 +11,13 @@
   <script src="index.js"></script>
 </head>
  <body ng-app="MarketApp">
-  <div class="tabs">
-    <span class="menu_block">
-      <a href="#!/"><span class="page_tab">
-        Main
-      </span></a>
-    </span>
-    <span class="menu_block">
-      <a href="#!/cart"><span class="page_tab">
-        Cart
-      </span></a>
-    </span>
-    <span class="menu_block">
-      <a><span class="page_tab">
-        History
-      </span></a>
-    </span>
-  </div>
+  <nav class="{{active}}">
+    <a class="main" ng-click="active='main'" href="#!/">Main</a>
+    <a class="cart" ng-click="active='cart'" href="#!/cart">Cart</a>
+    <a class="history" ng-click="active='history'" href="/">History</a>
+  </nav>
   <div ng-view></div>
   <script type="text/javascript" src="choiseCtrl.js"></script>
+  <script type="text/javascript" src="cartCtrl.js"></script>
  </body>
 </html>

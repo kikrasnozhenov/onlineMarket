@@ -1,6 +1,8 @@
-<div ng-repeat="item in items">
+<button ng-click="reverse = !reverse; predicate = 'price'" type="button">Sort by price</button>
+<button ng-click="reverse = !reverse; predicate = 'name'" type="button">Sort by name</button>
+<div ng-repeat="item in items | orderBy:predicate:reverse"">
   <div class="title">
-    {{item.name}}
+    {{ $index+1 }}. {{item.name}}
   </div>
   <div class="img_block">
     <img class="img" ng-src="{{item.url}}">
@@ -10,9 +12,9 @@
       <b>ingredients:</b> {{item.ingredients}}
     </div>
     <div class="price">
-      Price: {{item.price}}
+      Price: ${{item.price}}
     </div>
-    <button type="button" class="btn btn-success">add to cart</button>
+    <button ng-click="vm.massage()" type="button" class="btn btn-success">add to cart</button>
   </div>
 </div>
 <div class="contacts">
