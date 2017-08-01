@@ -1,8 +1,6 @@
 var MarketApp = angular.module('MarketApp');
 
-
 MarketApp.controller('choiseCtrl', function($scope, $http){
-    choiseCtrl.$inject = ['Items'];
     var vm = this;
     $http({
       method: 'GET',
